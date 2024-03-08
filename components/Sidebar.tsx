@@ -5,8 +5,8 @@ import { BiSearch } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
 
-// import { Song } from "@/types";
-// import usePlayer from "@/hooks/usePlayer";
+import { Song } from "@/types";
+import usePlayer from "@/hooks/usePlayer";
 
 import SidebarItem from "./SidebarItem";
 import Box from "./Box";
@@ -15,12 +15,12 @@ import { useMemo } from "react";
 
 interface SidebarProps {
   children: React.ReactNode;
-  //   songs: Song[];
+  songs: Song[];
 }
 
 const Sidebar = ({ children, songs }: SidebarProps) => {
   const pathname = usePathname();
-  //   const player = usePlayer();
+  const player = usePlayer();
 
   const routes = useMemo(
     () => [
