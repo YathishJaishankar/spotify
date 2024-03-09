@@ -22,7 +22,7 @@ export async function POST(request: Request) {
       email: user?.email || "",
     });
 
-    const session = await stripe.checkout.sessions.create({
+    const session = await {
       payment_method_types: ["card"],
       billing_address_collection: "required",
       customer,
@@ -40,7 +40,7 @@ export async function POST(request: Request) {
       },
       success_url: `${getURL()}/account`,
       cancel_url: `${getURL()}/`,
-    });
+    };
 
     return NextResponse.json({ sessionId: session.id });
   } catch (err: any) {
