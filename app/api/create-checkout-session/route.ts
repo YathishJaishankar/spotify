@@ -42,7 +42,7 @@ export async function POST(request: Request) {
       cancel_url: `${getURL()}/`,
     };
 
-    return NextResponse.json({ sessionId: session.id });
+    return NextResponse.json({ sessionId: session });
   } catch (err: any) {
     console.log(err);
     return new NextResponse("Internal Error", { status: 500 });
