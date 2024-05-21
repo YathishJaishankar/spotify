@@ -1,3 +1,11 @@
+DEMO VIDEO OF SPOTIFY CLONE:
+
+The demo video link is: 
+https://drive.google.com/file/d/1L6Ztq00PeryzjzkDlrFQIq9yHz-7LNgz/view?usp=sharing
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
