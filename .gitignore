@@ -9,7 +9,7 @@ password.txt
 .yarn/install-state.gz
 
 # testing
-/coverag
+/coverage
 
 # next.js
 /.next/
